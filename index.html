@@ -198,16 +198,16 @@ What is Parkinson’s? (no date) Parkinson’s UK. Available at:<a href=" https:
   </pre>
 </p>
 
- <h2> Conference Presentation:How has emerging technology revolutionised the treatment of Parkinson’s disease?  </h2> 
+ <h2>Conference Presentation:How has emerging technology revolutionised the treatment of Parkinson’s disease?</h2> 
     <script>
 // Array of slide image URLs
-   <script>
+   
     var slideImages = ["slide1.jpg", "slide2.jpg", "slide3.jpg", "slide4.jpg"];
     var currentSlide = 0;
 
     function showSlide() {
         // Update the image source
-        document.getElementById("slide").src = slideImages[currentSlide];
+        document.getElementById('slide').src = slideImages[currentSlide];
 
         // Use setTimeout for a slideshow effect
         setTimeout(function () {
@@ -216,15 +216,17 @@ What is Parkinson’s? (no date) Parkinson’s UK. Available at:<a href=" https:
         }, 2000); // Adjust the delay (in milliseconds) between slides
     }
 
-    function prevSlide() {
-        currentSlide = (currentSlide - 1 + slideImages.length) % slideImages.length;
-        showSlide();
-    }
+
 
     function nextSlide() {
         currentSlide = (currentSlide + 1) % slideImages.length;
         showSlide();
     }
+
+       function prevSlide() {
+        currentSlide = (currentSlide - 1 + slideImages.length) % slideImages.length;
+        showSlide();
+    }   
 
     function showSlideNumber(slideNumber) {
         currentSlide = slideNumber - 1;
@@ -236,7 +238,7 @@ What is Parkinson’s? (no date) Parkinson’s UK. Available at:<a href=" https:
        
 
     <div id ="slide-container">
-        <img id="slide"src="slide1.jpg"alt="Slide 1" style="width:100%;max-width:800px;">
+        <img id="slide" src="slide1.jpg"alt="Slide 1" style="width:100%; max-width:800px;">
         
         <div class="button-container">
 <button class="button" onclick="prevSlide()">Previous</button>
@@ -277,7 +279,7 @@ What is Parkinson’s? (no date) Parkinson’s UK. Available at:<a href=" https:
     
 .slide-number-container{
     position: absolute;
-    bottom:0;
+    bottom: 0;
     left: 50%;
     transform: translateX(-50%);
     margin-bottom: -50px;
