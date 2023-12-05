@@ -209,14 +209,7 @@ What is Parkinson’s? (no date) Parkinson’s UK. Available at:<a href=" https:
         // Update the image source
         document.getElementById('slide').src = slideImages[currentSlide];
 
-        // Use setTimeout for a slideshow effect
-        setTimeout(function () {
-            currentSlide = (currentSlide + 1) % slideImages.length;
-            showSlide();
-        }, 2000); // Adjust the delay (in milliseconds) between slides
-    }
-
-
+    
 
     function nextSlide() {
         currentSlide = (currentSlide + 1) % slideImages.length;
